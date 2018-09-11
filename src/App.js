@@ -13,6 +13,8 @@ import About from './containers/about';
 import UserHome from './containers/userHome';
 import UserProfile from './containers/userProfile';
 import AboutUs from './containers/aboutUs';
+import Impact from './containers/impact';
+import HowTo from './containers/howto';
 
 // import components
 import NavBar from "./components/navBar";
@@ -151,6 +153,8 @@ class App extends Component {
                 <Route exact path = "/about" component = {About} />
                 <Route exact path = "/" component = {Home} />
                 <Route exact path = "/" component = {SignUp} />
+                <Route exact path = "/howto" component = {HowTo} />
+                <Route exact path = "/impact" component = {Impact} />
                 <Route exact path = "/aboutus" component = {AboutUs} />
               </div>
 
@@ -171,6 +175,8 @@ class App extends Component {
             <div>
               <Route exact path = "/history" component = {History}/>
               <Route exact path = "/about" component = {About} />
+              <Route exact path = "/howto" component = {HowTo} />
+              <Route exact path = "/impact" component = {Impact} />
               <Route exact path = "/" render={() => <UserHome userUid={this.state.user.uid}/>} />
               <Route exact path = "/profile" render={this.userProfilePageRedirect} />
               <Route exact path = "/aboutus" component = {AboutUs} />

@@ -24,6 +24,14 @@ const NavBarSignedIn = ( {trySignOut} ) => {
                         <li className="nav-item">
                             <a className="nav-link" href="/history">History</a>
                         </li>
+
+                        <li className="nav-item">
+                            <a className="nav-link disabled" href="/impact">Impact</a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a className="nav-link disabled" href="/howto">How To</a>
+                        </li>
                         
                     </ul>
 
